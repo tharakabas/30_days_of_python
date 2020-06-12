@@ -1,5 +1,4 @@
 
-
 with open('some1.txt', 'r') as file_object1:
     file1_cont = set(file_object1.read().split())
     # print(file1_cont)

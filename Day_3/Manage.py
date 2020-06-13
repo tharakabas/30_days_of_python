@@ -1,6 +1,7 @@
 import os
 import shutil
 
+docs = ['.docx', '.txt']
 current_dir = os.getcwd()
 
 for file in os.listdir(current_dir):
@@ -9,7 +10,7 @@ for file in os.listdir(current_dir):
     try:
         if file_ext in '':
             pass
-        elif file_ext in ('.docx' or '.txt'):
+        elif any(file_ext for x in docs):
             print(os.path.join(filename, file_ext))
 
     except FileNotFoundError:

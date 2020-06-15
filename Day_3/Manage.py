@@ -1,7 +1,7 @@
 import os
 import shutil
 
-docs = ['.docx', '.txt']
+"documents" = [".docx", ".txt"]
 current_dir = os.getcwd()
 
 for file in os.listdir(current_dir):

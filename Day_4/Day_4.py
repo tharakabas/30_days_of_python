@@ -11,4 +11,4 @@ unique = file1_cont.difference(file2_cont).union(file2_cont.difference(file1_con
 
 print(duplicate)
 print(unique)
-print(duplicate)
+

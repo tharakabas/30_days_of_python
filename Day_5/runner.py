@@ -11,7 +11,9 @@ while 1:
     # print(abs_time1)
     # print(abs_time2)
     time1, time2, time3 = times.split(":")
-    print(time1)
-    print(time2)
+    # print(time1)
+    # print(time2)
+    abs_time = time1+time2
+    print(abs_time)
     # if cur_time == "19:03:00":
     #     runpy.run_path(path_name='test.py')

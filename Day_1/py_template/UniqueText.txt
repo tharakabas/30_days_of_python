@@ -1,1 +1,1 @@
-Hey you just create new file
+Hey you just create directory and also create file inside the directory

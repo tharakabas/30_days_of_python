@@ -1,7 +1,8 @@
 
 with open('text1.txt', 'r') as file_object1:
     file1_cont = set(file_object1.read().split())
-    # print(file1_cont)
+    # read file and get content and split them and after convert
+    # slitted list in to set
 
 with open('text2.txt', 'r') as file_object2:
     file2_cont = set(file_object2.read().split())

@@ -1,0 +1,1 @@
+In this this script i try to run test.py script at a scheduled time.But anyway this ia not a best way to do it but any way tried it.

@@ -6,7 +6,7 @@ dir_name = os.path.dirname(__file__)
 
 # Map file extensions
 ext_dict = {
-    "Document": [".oxps", ".eub", ".pages", ".docx", ".doc", ".fdf", ".ods",
+    "Document": [".oxps", ".epub", ".pages", ".docx", ".doc", ".fdf", ".ods",
                  ".pub", ".odt", ".pwi", ".xsn", ".xps", ".dotx", ".docm", ".dox",
                  ".rvg", ".rtf", ".rtfd", ".wpd", ".xls", ".xlsx", ".ppt", "pptx", ".txt"],
 

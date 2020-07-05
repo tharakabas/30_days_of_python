@@ -15,8 +15,9 @@ def send(msg):
     message = msg.encode(FORMAT)
     message_length = len(message)
     send_length = str(message_length).encode(FORMAT)
-    send_length += b'' * (HEADER - len(send_length))
+    send_length += b' ' * (HEADER - len(send_length))
     client.send(send_length)
     client.send(message)
+
 
 send("Hello World")

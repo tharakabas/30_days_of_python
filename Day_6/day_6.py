@@ -1,14 +1,14 @@
-import argparse
-import os
+dct = {'key1': 'value1', 'key2': 'value2', 'key3': 'value3', 'key4': 'value4'}
 
-my_parser = argparse.ArgumentParser(description='List the content of folder')
-my_parser.add_argument('Path', metavar='path', type=str, help='The path to list')
-args = my_parser.parse_args()
-input_path = args.Path
+print(dct)
+print(len(dct))
 
-if not os.path.isdir(input_path):
-    print('The path specified is not exist')
-    exit(3)
+print(dct['key1'])
+print(dct.get('key1'))
 
-for item in os.listdir(input_path):
-    print(item)
+# adding values
+dct['key5'] = 'value5'
+print(dct)
+
+# edit items
+dct['key1'] = 'new value'

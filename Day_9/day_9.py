@@ -1,20 +1,51 @@
-import os
-import time
-import argparse
-import shutil
+numbers = [0, 1, 2, 3, 4, 5]
+for number in numbers:
+    print(number)
 
-my_parser = argparse.ArgumentParser(description='Move x months old files in a directory to archive directory')
-my_parser.add_argument('Path', metavar='path', type=str, help='The path to directory')
-my_parser.add_argument('Months', metavar='months', type=int, help='Number of months')
-args = my_parser.parse_args()
-input_path = args.Path
-input_months = args.Months
-old_age = input_months * 30 * 24 * 3600
-archive_directory_path = ''
+language = 'Python'
+for letter in language:
+    print(letter)
 
-for item in os.listdir(input_path):
-    created_date = os.path.getctime(os.path(item))
-    if created_date > old_age:
-        shutil.move(os.path(item), archive_directory_path)
-    else:
-        pass
+numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+
+
+person = {
+    'first_name':'Asabeneh',
+    'last_name':'Yetayeh',
+    'age':250,
+    'country':'Finland',
+    'is_marred':True,
+    'skills':['JavaScript', 'React', 'Node', 'MongoDB', 'Python'],
+    'address':{
+        'street':'Space street',
+        'zipcode':'02210'
+    }
+}
+for key in person:
+    print(key)
+
+for key, value in person.items():
+    print(key, value)
+
+it_companies = {'Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon'}
+for company in it_companies:
+    print(company)
+
+numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        break
+
+numbers = (0,1,2,3,4,5)
+for number in numbers:
+    print(number)
+    if number == 3:
+        continue
+    print('Next number should be ', number + 1) if number != 5 else print("loop's end")
+print('outside the loop')
+
+for number in range(11):
+    print(number)

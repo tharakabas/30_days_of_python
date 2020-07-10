@@ -1,0 +1,1 @@
+zip all files and directories individually
